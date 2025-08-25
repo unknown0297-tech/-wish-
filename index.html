@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Happy Birthday My Love ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .heart {
+      font-size: 3rem;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .play-btn {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .signature {
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    .photo {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" autoplay loop preload="auto">
+    <source src="Beiraada2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Main Birthday Card -->
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Happy Birthday kuchupucuu ❤️, My Love 🎂</h1>
+    
+    <!-- Optional Picture -->
+    <img src="c pictuere.jpg" alt="US" class="photo" />
+
+    <p>
+      On this special day, I just want to tell you how lucky I am<br>
+      to have you in my life. 💖<br><br>
+      You light up my world like nobody else.<br>
+      Here's to more love, laughter, and memories with you. 🥂<br><br>
+      I love you, forever and always. 💞
+    </p>
+
+    <div class="signature">— Best Wishes From your Dhruv, I'm Always yours 💌</div>
+
+    <button onclick="document.getElementById('bg-music').play()" class="play-btn">Play Music 🎶</button>
+  </div>
+
+  <!-- Music Play Fix for Mobile -->
+  <script>
+    window.addEventListener('click'), () => {}
+      const music = document.getElementById('bg-music')
